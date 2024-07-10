@@ -4,6 +4,22 @@ The most curious concept of Proxmark3 is standalone mode.
 
 If you can power your device from battery, you can run small modules from the PM3 itself, without needing a computer running the PM3 client.
 
+# Be warned!
+> ⚠ It should be pointed out quite early that the Proxmark3 is not for beginners.
+>
+> If you are not already fairly familiar with electronics, embedded programming, some RF design and ISO standards, this device will probably bring you more frustration than anything else!
+>
+> Users that do not understand the basic principles behind RFID may have difficulty using the device.
+
+# Rules of Proxmark3
+
+_First rule of proxmarking_   **read the datasheets**
+
+_Second rule of proxmarking_    **search the forum**
+
+_Third rule of proxmarking_       **learning is hard and takes time**
+
+
 ## Update MAKEFILE.HAL
 
 Add your mode to the `Makefile.hal` help and modes list (alphabetically):
@@ -87,6 +103,12 @@ After changing your standalone mode, _don't forget to build and flash the code t
 ## Writing your own
 
 See: https://github.com/RfidResearchGroup/proxmark3/blob/master/armsrc/Standalone/readme.md
+
+# Source
+
+_Now go and read the_ [Readme](https://github.com/RfidResearchGroup/proxmark3/blob/master/README.md)
+
+_Other valuable source of information is the_   [Official Proxmark3 wiki](https://github.com/Proxmark/proxmark3/wiki) _but beware a lot of things have changed between the official Proxmark3 and this repo_
 
 # Additional information
 
