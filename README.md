@@ -1,1 +1,1 @@
-# proxmark3_module_standalone
+# Proxmark3 Standalone Module
