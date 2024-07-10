@@ -75,28 +75,26 @@ STANDALONE=LF_FOO
 
 Remember only one can be selected at a time for now.
 
-The final steps is to 
-- force recompilation of all code.  ```make clean```
-- compile ```make -j```
-- flash your device
-- connect to your device
-- press button long time to trigger ledshow and enter your new standalone mode
-- if connected with usb / fpc ,  you can also see debug statements from your device in standalone mode. Useful for debugging :)
-
 When compiling you will see a header showing what configurations your project compiled with.
 Make sure it says your standalone mode name.
 
-# Writing your own
+After changing your standalone mode, _don't forget to build and flash the code to the Proxmark3_:
+
+1. `make clean`
+2. `make -j`
+3. `./pm3-flash-fullimage`
+
+## Writing your own
 
 See: https://github.com/RfidResearchGroup/proxmark3/blob/master/armsrc/Standalone/readme.md
 
-#Additional information
+# Additional information
 
 Some members of our community have produced text and video walk-throughs of these modules:
 
-@Hacker warehouse did a nice video on youtube.
-Troy also has a nice image of the leds for LF_SAMYRUN.
-TinkerSec blogged about HID Prox badge cloning.
-quentynblog made a video about the HF_TCPRST (IKEA Rothult) standalone module.
+* [@Hacker warehouse](https://twitter.com/hackerwarehouse) did a nice [video on youtube](https://www.youtube.com/watch?v=W22juSqhJSA).
+* Troy also has a nice [image of the leds for LF_SAMYRUN](https://twitter.com/waveguyd/status/1051546698500067328).
+* [TinkerSec](https://twitter.com/TinkerSec) [blogged about HID Prox badge cloning](https://www.tinker.sh/badge-cloning-clone-hid-prox-with-proxmark3-rvd4/).
+* [quentynblog](https://twitter.com/quentynblog) made [a video about the HF_TCPRST (IKEA Rothult) standalone module](https://www.youtube.com/watch?v=Q08qhJ3TOM8).
 
 
